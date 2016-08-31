@@ -46,11 +46,8 @@ var SelectDropdownDemo = React.createClass( {
 		var toggleButtonsText = this.state.compactButtons ? 'Normal Buttons' : 'Compact Buttons';
 
 		return (
-			<div className="design-assets__group">
-				<h2>
-					<a href="/devdocs/design/select-dropdown">Select Dropdown</a>
-					<a className="design-assets__toggle button" onClick={ this.toggleButtons }>{ toggleButtonsText }</a>
-				</h2>
+			<div>
+				<a className="design-assets__toggle button" onClick={ this.toggleButtons }>{ toggleButtonsText }</a>
 
 				<h3>Items passed as options prop</h3>
 				<SelectDropdown
