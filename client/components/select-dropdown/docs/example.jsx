@@ -47,7 +47,7 @@ var SelectDropdownDemo = React.createClass( {
 
 		return (
 			<div>
-				<a className="design-assets__toggle button" onClick={ this.toggleButtons }>{ toggleButtonsText }</a>
+				<a className="docs__design-toggle button" onClick={ this.toggleButtons }>{ toggleButtonsText }</a>
 
 				<h3>Items passed as options prop</h3>
 				<SelectDropdown
