@@ -203,13 +203,31 @@ class PlansFeaturesMain extends Component {
 		return (
 			<FAQ>
 				<FAQItem
+					question={ translate( 'What will happen to my content if I upgrade? Will I have to start over?' ) }
+					answer={ translate(
+						'Plans add extra features to your site, but they don’t change the content on your site' +
+						' in any way. Your existing posts and pages will still exist, your followers will still' +
+						' get notifications of your posts and see them in the Reader, and if you add a domain' +
+						' people will still be able to find your site by using the free address as well. And' +
+						' should you ever need to cancel your plan, your site will go back to the free plan' +
+						' and you won’t lose any content.'
+					) }
+				/>
+
+				<FAQItem
 					question={ translate( 'Do you sell domains?' ) }
 					answer={ translate(
 						'Yes! The personal, premium, and business plans include a free custom domain. That includes new' +
 						' domains purchased through WordPress.com or your own existing domain that you can map' +
 						' to your WordPress.com site. {{a}}Find out more about domains.{{/a}}',
 						{
-							components: { a: <a href="https://en.support.wordpress.com/all-about-domains/" target="_blank" rel="noopener noreferrer" /> }
+							components: {
+								a: <a
+									href="https://en.support.wordpress.com/all-about-domains/"
+									target="_blank"
+									rel="noopener noreferrer"
+								/>
+							}
 						}
 					) }
 				/>
@@ -256,7 +274,13 @@ class PlansFeaturesMain extends Component {
 						' add Google apps for work. You can also set up email forwarding for any custom domain' +
 						' registered through WordPress.com. {{a}}Find out more about email{{/a}}.',
 						{
-							components: { a: <a href="https://en.support.wordpress.com/add-email/" target="_blank" rel="noopener noreferrer" /> }
+							components: {
+								a: <a
+									href="https://en.support.wordpress.com/add-email/"
+									target="_blank"
+									rel="noopener noreferrer"
+								/>
+							}
 						}
 					) }
 				/>
@@ -269,7 +293,13 @@ class PlansFeaturesMain extends Component {
 						' more precise control of your site’s' +
 						' design. {{a}}Find out more about custom design{{/a}}.',
 						{
-							components: { a: <a href="https://en.support.wordpress.com/custom-design/" target="_blank" rel="noopener noreferrer" /> }
+							components: {
+								a: <a
+									href="https://en.support.wordpress.com/custom-design/"
+									target="_blank"
+									rel="noopener noreferrer"
+								/>
+							}
 						}
 					) }
 				/>
