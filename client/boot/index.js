@@ -1,5 +1,9 @@
 // Initialize localStorage polyfill before any dependencies are loaded
 require( 'lib/local-storage' )();
+
+// Initialize draft-js polyfill needed for SEO title format editor
+require( 'lib/draft-js-polyfill' )();
+
 if ( process.env.NODE_ENV === 'development' ) {
 	require( 'lib/wrap-es6-functions' )();
 }
